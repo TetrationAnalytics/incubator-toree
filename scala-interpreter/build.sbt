@@ -14,3 +14,6 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License
  */
+dependencyOverrides ++= Set(
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.4.4"
+)
