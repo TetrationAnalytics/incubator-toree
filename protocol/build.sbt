@@ -30,5 +30,10 @@ libraryDependencies ++= Seq(
 //
 libraryDependencies ++= Seq(
   "org.scalactic" %% "scalactic" % "2.2.6" % "test", // Apache v2
-  "com.fasterxml.jackson.core" % "jackson-databind" % "2.7.4" // Apache v2
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.7.4", // Apache v2
+  "com.fasterxml.jackson.module" % "jackson-module-scala_2.10" % "2.7.4"
+)
+
+dependencyOverrides ++= Set(
+  "com.fasterxml.jackson.core" % "jackson-databind" % "2.7.4"
 )
